@@ -7,7 +7,7 @@ oddArr: .space 24
 .globl main
 main:
     la $t0, numbers        # Base address of numbers
-    la $t1, evenArr        # Base address of evenArr
+    la $t1, evenArr        # Base address of evenArr    
     la $t2, oddArr         # Base address of oddArr
     li $t3, 0              # Initialize sum
     li $t4, 6              # Element count
@@ -32,8 +32,8 @@ next:
     bnez $t4, loop         # Loop if count > 0
 
     li $t4,6
-    div $t3,$t4           # Calculate average
+    div $t3,$t4            # Calculate average
     mflo $a0               # Move avg to $a0
     
-    li $v0,10             # Exit
-    syscall
+    li $v0,10              # Exit
+    syscall               
