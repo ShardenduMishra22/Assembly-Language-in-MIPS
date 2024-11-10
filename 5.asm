@@ -1,15 +1,14 @@
-# add
+# area square
 
 .data
 .text
-
 .globl main
 main:
 
-li $t0,5
-li $t1,2
+li $t0,45
+li $t1,55
 
-add $t2,$t0,$t1
+mul $t2,$t1,$t0
 
 li $v0,10
 syscall
