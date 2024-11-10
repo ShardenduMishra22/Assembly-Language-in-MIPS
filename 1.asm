@@ -1,5 +1,6 @@
 # Store 32b in $t0, $t1 and store in $t2
 
+
 .data
 x : .word 10
 y : .word -11
